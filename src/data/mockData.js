@@ -319,18 +319,18 @@ export const mockTransactions = [
 
 export const mockBarData = [
   {
-    country: "AD",
-    "hot dog": 137,
-    "hot dogColor": "hsl(229, 70%, 50%)",
-    burger: 96,
-    burgerColor: "hsl(296, 70%, 50%)",
-    kebab: 72,
-    kebabColor: "hsl(97, 70%, 50%)",
+    country: "Jan",
+    // "hot dog": 137,
+    // "hot dogColor": "hsl(229, 70%, 50%)",
+    // burger: 96,
+    // burgerColor: "hsl(296, 70%, 50%)",
+    // kebab: 72,
+    // kebabColor: "hsl(97, 70%, 50%)",
     donut: 140,
-    donutColor: "hsl(340, 70%, 50%)",
+    donutColor: "#38bcb2",
   },
   {
-    country: "AE",
+    country: "Feb",
     "hot dog": 55,
     "hot dogColor": "hsl(307, 70%, 50%)",
     burger: 28,
@@ -341,7 +341,7 @@ export const mockBarData = [
     donutColor: "hsl(275, 70%, 50%)",
   },
   {
-    country: "AF",
+    country: "Mar",
     "hot dog": 109,
     "hot dogColor": "hsl(72, 70%, 50%)",
     burger: 23,
@@ -352,7 +352,7 @@ export const mockBarData = [
     donutColor: "hsl(256, 70%, 50%)",
   },
   {
-    country: "AG",
+    country: "Apr",
     "hot dog": 133,
     "hot dogColor": "hsl(257, 70%, 50%)",
     burger: 52,
@@ -363,7 +363,7 @@ export const mockBarData = [
     donutColor: "hsl(9, 70%, 50%)",
   },
   {
-    country: "AI",
+    country: "May",
     "hot dog": 81,
     "hot dogColor": "hsl(190, 70%, 50%)",
     burger: 80,
@@ -374,7 +374,7 @@ export const mockBarData = [
     donutColor: "hsl(285, 70%, 50%)",
   },
   {
-    country: "AL",
+    country: "June",
     "hot dog": 66,
     "hot dogColor": "hsl(208, 70%, 50%)",
     burger: 111,
@@ -385,7 +385,7 @@ export const mockBarData = [
     donutColor: "hsl(76, 70%, 50%)",
   },
   {
-    country: "AM",
+    country: "July",
     "hot dog": 80,
     "hot dogColor": "hsl(87, 70%, 50%)",
     burger: 47,
@@ -394,6 +394,26 @@ export const mockBarData = [
     kebabColor: "hsl(224, 70%, 50%)",
     donut: 49,
     donutColor: "hsl(274, 70%, 50%)",
+  },
+  {
+    country:"Aug",
+    donut:28,
+  },
+  {
+    country:"Sep",
+    donut:100,
+  },
+  {
+    country:"Oct",
+    donut:60,
+  },
+  {
+    country:"Nov",
+    donut:108,
+  },
+  {
+    country:"Dec",
+    donut:28,
   },
 ];
 
