@@ -1,4 +1,4 @@
-# React Admin Dashboard
+# create React app
+npx create-react-app .
 
-Completed React Admin Dashboard Repo
 
