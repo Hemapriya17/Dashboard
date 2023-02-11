@@ -4,8 +4,7 @@ import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 import Procedure from "./scenes/Procedure";
-import Invoices from "./scenes/invoices";
-import Contacts from "./scenes/contacts";
+import Settings from "./scenes/Settings";
 import Bar from "./scenes/bar";
 import Form from "./scenes/form";
 import Line from "./scenes/line";
@@ -15,6 +14,7 @@ import Geography from "./scenes/geography";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+import Runz from "./scenes/Runz";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -31,8 +31,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/procedure" element={<Procedure />} />
-              <Route path="/runz" element={<Contacts />} />
-              <Route path="/settings" element={<Invoices />} />
+              <Route path="/runz" element={<Runz />} />
+              <Route path="/settings" element={<Settings />} />
               <Route path="/profile" element={<Form />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />

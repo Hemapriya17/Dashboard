@@ -10,33 +10,46 @@ const Procedure = () => {
   const columns = [
     { field: "id", headerName: "ID" },
     {
-      field: "ProcedureName",
+      field: "Procedure",
       headerName: "Procedure Name",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "labtype",
+      field: "Lab",
       headerName: "Lab Name",
       flex: 1,
     },
     {
-      field: "department",
+      field: "Department",
       headerName: "Department",
       flex: 1,
     },
     {
-      field: "year",
+      field: "Year",
       headerName: "Year",
       align: "left",
     },
     {
-      field: "institute",
+      field: "Institute",
       headerName: "Institute",
       align: "left",
     },
   ];
 
+  const rows=[
+
+    {id:12345, Procedure:"Air Wedge", Lab:"Physics", Department:"All", Year:"1",Institute:"PU"  },
+    {id:13345, Procedure:"Polarimeter", Lab:"Physics", Department:"All", Year:"1",Institute:"PU"  },
+{id:14345, Procedure:"EDTA", Lab:"Chemistry", Department:"All", Year:"1",Institute:"PU"  },
+
+{id:15345, Procedure:"Lees disc", Lab:"Physics", Department:"All", Year:"1",Institute:"PU"  },
+
+{id:16345, Procedure:"Water", Lab:"Chemistry", Department:"All", Year:"1",Institute:"PU"  },
+
+{id:17345, Procedure:"Newton", Lab:"Physics", Department:"All", Year:"1",Institute:"PU"  },
+
+  ]
   return (
     <Box m="20px">
       <Header
@@ -72,7 +85,7 @@ const Procedure = () => {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
+        <DataGrid checkboxSelection rows={rows} columns={columns} />
       </Box>
     </Box>
   );

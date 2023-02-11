@@ -13,7 +13,7 @@ const Form = () => {
 
   return (
     <Box m="20px">
-      <Header title="CREATE USER" subtitle="Create a New User Profile" />
+      <Header title="EDIT PROFILE" subtitle="Edit your Profile" />
 
       <Formik
         onSubmit={handleFormSubmit}
@@ -80,7 +80,7 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="Contact Number"
+                label="Registered Number"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.contact}
@@ -93,7 +93,7 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="Address 1"
+                label="University"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.address1}
@@ -106,7 +106,20 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="Address 2"
+                label="Institute Name"
+                onBlur={handleBlur}
+                onChange={handleChange}
+                value={values.address2}
+                name="address2"
+                error={!!touched.address2 && !!errors.address2}
+                helperText={touched.address2 && errors.address2}
+                sx={{ gridColumn: "span 4" }}
+              />
+              <TextField
+                fullWidth
+                variant="filled"
+                type="text"
+                label="Department"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.address2}
@@ -118,7 +131,7 @@ const Form = () => {
             </Box>
             <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
-                Create New User
+                SAVE
               </Button>
             </Box>
           </form>

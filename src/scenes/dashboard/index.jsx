@@ -8,7 +8,6 @@ import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
@@ -241,7 +240,6 @@ const Dashboard = () => {
               48,352 Runz generated
             </Typography>
           </Box>
-
         </Box>
         <Box
           gridColumn="span 8"
@@ -265,14 +263,14 @@ const Dashboard = () => {
           backgroundColor={colors.primary[400]}
           padding="30px"
         > */}
-          {/* <Typography
+        {/* <Typography
             variant="h5"
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
             Geography Based Traffic
           </Typography> */}
-          {/* <Box height="200px">
+        {/* <Box height="200px">
             <GeographyChart isDashboard={true} />
           </Box> */}
         {/* </Box> */}
